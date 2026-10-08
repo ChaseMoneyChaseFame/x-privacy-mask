@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "X Privacy Mask",
   "description": "在 X 页面遮住当前账号身份，降低办公室场景下的意外暴露。",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "action": {
     "default_title": "X 隐私遮罩",
     "default_popup": "popup.html"

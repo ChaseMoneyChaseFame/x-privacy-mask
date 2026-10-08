@@ -8,7 +8,7 @@
 
 当前提供 GitHub 手动安装版，尚未上架扩展商店。适用于支持加载 Manifest V3 扩展的桌面 Chromium 浏览器；Chrome、Edge、Arc、Dia 的真实兼容性仍需使用者验证。不支持 Safari、Firefox 或手机浏览器。
 
-1. 打开上面的下载页，在 **Assets** 中下载 `x-privacy-mask-v0.1.1.zip`。不要选 `Source code`。
+1. 打开上面的下载页，在 **Assets** 中下载 `x-privacy-mask-v0.1.2.zip`。不要选 `Source code`。
 2. **解压 ZIP**，把解压后的文件夹放在一个长期保留的位置。
 3. 打开浏览器的扩展管理页：Chrome 为 `chrome://extensions`，Edge 为 `edge://extensions`；其他浏览器从菜单进入“管理扩展程序”。
 4. 开启右上角的 **开发者模式**，点击 **加载已解压的扩展程序**。
@@ -60,7 +60,7 @@ npm run validate
 npm run package
 ```
 
-打包命令需要 `zip`，会生成 `dist/x-privacy-mask-v<版本号>.zip`。安装包包含扩展文件和本说明，不包含开发环境或个人项目记录。
+打包命令需要 `zip`，会生成 `dist/x-privacy-mask-v<版本号>.zip`。安装包包含扩展文件、本说明和 MIT 协议，不包含开发环境或个人项目记录。
 
 模拟浏览器回归测试需要额外安装 Playwright 和 Chromium：
 
@@ -74,6 +74,11 @@ npm run test:browser
 
 ## 版本记录
 
+### 0.1.2
+
+- 添加 MIT 开源协议，允许使用、修改、分发和商业使用，需保留版权及许可声明。
+- 下载包附带 `LICENSE`，扩展功能与 `0.1.1` 相同。
+
 ### 0.1.1
 
 - 补充回复弹窗中没有个人主页链接、图片说明为通用文字的本人头像识别。
@@ -84,5 +89,11 @@ npm run test:browser
 
 - 左下角账号卡遮罩及悬停查看。
 - 页面身份开关、总开关、快捷键及本地设置。
+
+## 开源协议
+
+本项目采用 [MIT License](LICENSE)。你可以使用、修改、分发或商业使用本项目，但必须保留版权和许可声明。软件按原样提供，不作担保；完整条款以 `LICENSE` 为准。
+
+版权署名使用公开 GitHub 用户名 `ChaseMoneyChaseFame`。
 
 本项目与 X / Twitter 无隶属关系。

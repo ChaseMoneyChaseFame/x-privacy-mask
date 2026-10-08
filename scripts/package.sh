@@ -11,5 +11,5 @@ mkdir -p "$output_dir"
   cd "$experiment_root/extension"
   zip -qr -FS "$output_file" . -x '*.DS_Store'
 )
-zip -qj "$output_file" "$experiment_root/README.md"
+zip -qj "$output_file" "$experiment_root/README.md" "$experiment_root/LICENSE"
 printf '已生成：%s\n' "$output_file"
