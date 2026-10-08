@@ -1,0 +1,45 @@
+/* All visual changes are scoped by classes owned by the extension. */
+.xpm-account-card.xpm-is-masked {
+  position: relative !important;
+  color: transparent !important;
+}
+
+.xpm-account-card.xpm-is-masked > * {
+  visibility: hidden !important;
+}
+
+.xpm-account-card.xpm-is-masked::after {
+  background: var(--xpm-mask-color, Canvas) !important;
+  border-radius: inherit !important;
+  content: "" !important;
+  inset: 0 !important;
+  opacity: 1 !important;
+  pointer-events: none !important;
+  position: absolute !important;
+  transition: opacity 120ms ease !important;
+  z-index: 2147483646 !important;
+}
+
+.xpm-account-card.xpm-is-masked:hover > * {
+  visibility: visible !important;
+}
+
+.xpm-account-card.xpm-is-masked:hover::after {
+  opacity: 0 !important;
+}
+
+.xpm-identity-node.xpm-is-masked {
+  color: transparent !important;
+  filter: opacity(0) !important;
+}
+
+.xpm-identity-node.xpm-is-masked img,
+.xpm-identity-node.xpm-is-masked svg {
+  visibility: hidden !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .xpm-account-card.xpm-is-masked::after {
+    transition: none !important;
+  }
+}

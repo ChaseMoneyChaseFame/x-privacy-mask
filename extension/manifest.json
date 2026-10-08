@@ -1,0 +1,51 @@
+{
+  "manifest_version": 3,
+  "name": "X Privacy Mask",
+  "description": "在 X 页面遮住当前账号身份，降低办公室场景下的意外暴露。",
+  "version": "0.1.1",
+  "action": {
+    "default_title": "X 隐私遮罩",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://x.com/*",
+    "https://twitter.com/*"
+  ],
+  "commands": {
+    "toggle-enabled": {
+      "suggested_key": {
+        "default": "Alt+Shift+X",
+        "mac": "Alt+Shift+X"
+      },
+      "description": "切换 X 隐私遮罩总开关"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://x.com/*",
+        "https://twitter.com/*"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "js": [
+        "shared.js",
+        "content.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  }
+}

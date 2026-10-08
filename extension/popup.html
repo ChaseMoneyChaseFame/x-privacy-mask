@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>X 隐私遮罩</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="panel">
+      <header class="header">
+        <div class="brand-mark" aria-hidden="true">X</div>
+        <div>
+          <h1>X 隐私遮罩</h1>
+          <p id="statusText" class="status">正在读取状态…</p>
+        </div>
+      </header>
+
+      <section class="master-card">
+        <div>
+          <strong>隐私模式</strong>
+          <span id="masterHint" class="hint">快捷键可快速切换</span>
+        </div>
+        <label class="switch" aria-label="切换隐私模式">
+          <input id="enabled" type="checkbox">
+          <span class="slider"></span>
+        </label>
+      </section>
+
+      <section class="options" aria-label="遮罩范围">
+        <label class="option-row">
+          <span>
+            <strong>左下角账号卡</strong>
+            <small>悬停时临时显示</small>
+          </span>
+          <input id="accountCard" type="checkbox">
+        </label>
+        <label class="option-row">
+          <span>
+            <strong>页面身份</strong>
+            <small>发帖与回复框、个人主页和自己的帖子</small>
+          </span>
+          <input id="pageIdentity" type="checkbox">
+        </label>
+      </section>
+
+      <p id="detectionText" class="detection" role="status"></p>
+      <footer>仅在 x.com / twitter.com 生效 · 不读取账号凭据</footer>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
