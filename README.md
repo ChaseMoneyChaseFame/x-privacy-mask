@@ -2,7 +2,7 @@
 
 在 X / Twitter 页面遮住自己的账号卡、头像和身份信息，减少办公、演示或录屏时意外露出账号的情况。无需注册，无需配置密钥，设置保存在浏览器本地。
 
-**[下载最新版](https://github.com/Heawcyrt/x-privacy-mask/releases/latest)** · [反馈问题](https://github.com/Heawcyrt/x-privacy-mask/issues)
+**[下载最新版](https://github.com/ChaseMoneyChaseFame/x-privacy-mask/releases/latest)** · [反馈问题](https://github.com/ChaseMoneyChaseFame/x-privacy-mask/issues)
 
 ## 下载安装
 
